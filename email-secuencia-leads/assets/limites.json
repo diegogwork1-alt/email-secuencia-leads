@@ -1,0 +1,518 @@
+{
+  "_nota": "Única fuente de los números que comprueban build_email.py y qa_email.py. parametros.md los explica y cita su base. Si cambias uno aquí, cambia el texto en parametros.md y anótalo en changelog.md.",
+  "asunto": {
+    "min": 30,
+    "max": 45
+  },
+  "preheader": {
+    "min": 40,
+    "max": 90
+  },
+  "peso_kb": {
+    "aviso": 85,
+    "error": 90
+  },
+  "texto_minimo_caracteres": 500,
+  "_nota_frases": "Tipos que se miden en frases además de en palabras (secuencia.md §3). El breakup son 2-4 frases: antes solo se contaban las palabras y uno de cinco frases pasaba el control.",
+  "frases_cuerpo": {
+    "breakup": [
+      2,
+      4
+    ],
+    "no-show-2": [
+      2,
+      4
+    ]
+  },
+  "_nota_jerarquia": "Parámetros de jerarquía y contraste, independientes de la marca. Los tamaños se calculan como proporción del cuerpo; los colores y las fuentes salen siempre de la landing del cliente (references/diseno.md §1).",
+  "jerarquia": {
+    "cuerpo_px": 16,
+    "linea_cuerpo_px": 26,
+    "salto_minimo": 1.25,
+    "niveles_maximos": 3,
+    "anclas_cada_palabras": 130,
+    "contraste_minimo": {
+      "titular": 10,
+      "cuerpo": 8,
+      "suave": 4.6,
+      "acento": 4.5,
+      "boton": 4.5
+    },
+    "estilos": {
+      "editorial": {
+        "h1": 2.6,
+        "h2": 1.5,
+        "clave": 1.3,
+        "lead": 1.2,
+        "track_h1": "-0.6px",
+        "mayusculas": false,
+        "radio": "3px",
+        "cab_pad": "44px",
+        "sec_pad": "34px"
+      },
+      "moderno": {
+        "h1": 2.25,
+        "h2": 1.4,
+        "clave": 1.25,
+        "lead": 1.15,
+        "track_h1": "-1px",
+        "mayusculas": false,
+        "radio": "8px",
+        "cab_pad": "36px",
+        "sec_pad": "30px"
+      },
+      "display": {
+        "h1": 2.5,
+        "h2": 1.4,
+        "clave": 1.25,
+        "lead": 1.15,
+        "track_h1": "0.4px",
+        "mayusculas": true,
+        "radio": "0",
+        "cab_pad": "40px",
+        "sec_pad": "32px"
+      }
+    }
+  },
+  "cuerpo_palabras": {
+    "recepcion": [
+      60,
+      150
+    ],
+    "bienvenida": [
+      150,
+      320
+    ],
+    "leccion": [
+      150,
+      320
+    ],
+    "errores": [
+      150,
+      320
+    ],
+    "precio": [
+      150,
+      320
+    ],
+    "comparativa": [
+      150,
+      320
+    ],
+    "caso": [
+      150,
+      320
+    ],
+    "objeciones": [
+      150,
+      320
+    ],
+    "proceso": [
+      150,
+      320
+    ],
+    "invitacion": [
+      150,
+      260
+    ],
+    "breakup": [
+      15,
+      90
+    ],
+    "cita-confirmacion": [
+      60,
+      150
+    ],
+    "cita-recordatorio": [
+      60,
+      150
+    ],
+    "no-show": [
+      15,
+      90
+    ],
+    "no-show-2": [
+      9,
+      40
+    ]
+  },
+  "tipos_sin_texto_minimo": [
+    "breakup",
+    "no-show",
+    "no-show-2"
+  ],
+  "tipos_con_boton": [
+    "invitacion",
+    "recepcion",
+    "cita-confirmacion",
+    "cita-recordatorio",
+    "no-show"
+  ],
+  "_nota_boton_suave": "Botón secundario (papel con borde de acento) para CTA de poco compromiso en emails de valor: en la ficha, \"CTA_SUAVE\": true dentro del bloque \"boton\". El botón sólido sigue reservado a los tipos de tipos_con_boton.",
+  "tipos_con_boton_suave": [
+    "bienvenida",
+    "leccion",
+    "errores",
+    "precio",
+    "comparativa",
+    "caso",
+    "objeciones",
+    "proceso",
+    "invitacion",
+    "recepcion",
+    "cita-confirmacion",
+    "cita-recordatorio",
+    "no-show"
+  ],
+  "tipos_con_cierre": [
+    "invitacion",
+    "cita-confirmacion",
+    "cita-recordatorio"
+  ],
+  "tipos_carta_pura": [
+    "recepcion",
+    "breakup",
+    "no-show",
+    "no-show-2",
+    "cita-confirmacion",
+    "cita-recordatorio"
+  ],
+  "bloques_obligatorios": {
+    "recepcion": [
+      "carta",
+      "pasos"
+    ],
+    "bienvenida": [
+      "carta",
+      "pasos|seccion"
+    ],
+    "leccion": [
+      "titular",
+      "carta",
+      "seccion|destacado|pasos"
+    ],
+    "errores": [
+      "titular",
+      "carta",
+      "pasos|seccion"
+    ],
+    "precio": [
+      "titular",
+      "carta",
+      "tabla|cifras|faq"
+    ],
+    "comparativa": [
+      "titular",
+      "carta",
+      "tabla|caso"
+    ],
+    "caso": [
+      "carta",
+      "caso|cita"
+    ],
+    "objeciones": [
+      "carta",
+      "faq"
+    ],
+    "proceso": [
+      "carta",
+      "pasos"
+    ],
+    "invitacion": [
+      "titular",
+      "carta",
+      "boton|cierre"
+    ],
+    "breakup": [
+      "carta"
+    ],
+    "cita-confirmacion": [
+      "carta"
+    ],
+    "cita-recordatorio": [
+      "carta"
+    ],
+    "no-show": [
+      "carta"
+    ],
+    "no-show-2": [
+      "carta"
+    ]
+  },
+  "bloques_opcionales": [
+    "cierre",
+    "seccion",
+    "tabla",
+    "pasos",
+    "destacado",
+    "cita",
+    "caso",
+    "faq",
+    "cifras",
+    "resumen",
+    "imagen"
+  ],
+  "max_bloques_opcionales_por_email": 3,
+  "campos": {
+    "titular.H1": {
+      "palabras": [
+        3,
+        10
+      ],
+      "max_caracteres": 60
+    },
+    "titular.LEAD": {
+      "palabras": [
+        1,
+        30
+      ]
+    },
+    "imagen.PIE": {
+      "palabras": [
+        1,
+        14
+      ]
+    },
+    "carta.SALUDO": {
+      "palabras": [
+        1,
+        6
+      ]
+    },
+    "carta.PARRAFO": {
+      "palabras": [
+        1,
+        50
+      ]
+    },
+    "carta.PUNTO": {
+      "palabras": [
+        1,
+        22
+      ]
+    },
+    "seccion.TITULO": {
+      "palabras": [
+        2,
+        9
+      ],
+      "max_caracteres": 60
+    },
+    "seccion.PARRAFO": {
+      "palabras": [
+        1,
+        50
+      ]
+    },
+    "tabla.COL_A": {
+      "palabras": [
+        1,
+        4
+      ]
+    },
+    "tabla.COL_B": {
+      "palabras": [
+        1,
+        4
+      ]
+    },
+    "tabla.COL_0": {
+      "palabras": [
+        1,
+        4
+      ]
+    },
+    "caso.ANTES_ETIQUETA": {
+      "palabras": [
+        1,
+        2
+      ]
+    },
+    "caso.DESPUES_ETIQUETA": {
+      "palabras": [
+        1,
+        2
+      ]
+    },
+    "resumen.TITULO": {
+      "palabras": [
+        2,
+        6
+      ]
+    },
+    "imagen.ALT": {
+      "palabras": [
+        2,
+        16
+      ]
+    },
+    "tabla.ETIQUETA": {
+      "palabras": [
+        1,
+        5
+      ]
+    },
+    "tabla.A": {
+      "palabras": [
+        1,
+        12
+      ]
+    },
+    "tabla.B": {
+      "palabras": [
+        1,
+        12
+      ]
+    },
+    "tabla.NOTA": {
+      "palabras": [
+        1,
+        20
+      ]
+    },
+    "resumen.ETIQUETA": {
+      "palabras": [
+        1,
+        3
+      ]
+    },
+    "pasos.PASO_TITULO": {
+      "palabras": [
+        1,
+        6
+      ]
+    },
+    "pasos.PASO_TEXTO": {
+      "palabras": [
+        1,
+        24
+      ]
+    },
+    "destacado.TITULO": {
+      "palabras": [
+        1,
+        9
+      ]
+    },
+    "cita.CITA": {
+      "palabras": [
+        1,
+        45
+      ]
+    },
+    "caso.ANTES": {
+      "palabras": [
+        1,
+        35
+      ]
+    },
+    "caso.DESPUES": {
+      "palabras": [
+        1,
+        35
+      ]
+    },
+    "cifras.VALOR": {
+      "max_caracteres": 7
+    },
+    "cifras.ETIQUETA": {
+      "palabras": [
+        1,
+        4
+      ]
+    },
+    "faq.PREGUNTA": {
+      "palabras": [
+        1,
+        12
+      ]
+    },
+    "faq.RESPUESTA": {
+      "palabras": [
+        1,
+        45
+      ]
+    },
+    "cierre.TITULO": {
+      "palabras": [
+        2,
+        9
+      ],
+      "max_caracteres": 60
+    },
+    "cierre.TEXTO": {
+      "palabras": [
+        1,
+        30
+      ]
+    },
+    "cierre.CTA_TEXTO": {
+      "palabras": [
+        2,
+        5
+      ]
+    },
+    "boton.CTA_TEXTO": {
+      "palabras": [
+        2,
+        5
+      ]
+    },
+    "boton.CTA_NOTA": {
+      "palabras": [
+        1,
+        16
+      ]
+    },
+    "enlace.ENLACE_TEXTO": {
+      "palabras": [
+        2,
+        7
+      ]
+    },
+    "firma.PD": {
+      "palabras": [
+        1,
+        35
+      ]
+    }
+  },
+  "listas": {
+    "carta.parrafos": [
+      1,
+      7
+    ],
+    "carta.puntos": [
+      0,
+      5
+    ],
+    "seccion.parrafos": [
+      1,
+      4
+    ],
+    "tabla.filas": [
+      2,
+      5
+    ],
+    "resumen.filas": [
+      2,
+      5
+    ],
+    "pasos.pasos": [
+      3,
+      4
+    ],
+    "destacado.parrafos": [
+      1,
+      2
+    ],
+    "cifras.cifras": [
+      2,
+      3
+    ],
+    "faq.preguntas": [
+      2,
+      4
+    ]
+  }
+}

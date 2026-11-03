@@ -1,0 +1,36 @@
+{
+  "skill_name": "email-secuencia-leads",
+  "_nota": "Casos de prueba con negocios ficticios. Crea antes los archivos de ejemplo (brief y landing) en la carpeta indicada o cambia las rutas por las tuyas.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Usa email-secuencia-leads para un despacho de abogados de derecho de familia. Brief: ./ejemplos/despacho/brief.docx · Landing: ./ejemplos/despacho/index.html (el formulario es un Tally).",
+      "expected_output": "Parada 1 con aviso legal rojo si la casilla del Tally autoriza a contactar pero no a comunicaciones comerciales, y la decisión de entregar solo el E0; ficha de la oferta con fuentes; variables de las preguntas del Tally; tipo de oferta A; avatares y tabla de dudas y objeciones de la investigación; plan de 8 emails D0-D21 con las columnas del test de valor, incluida la duda u objeción que derriba cada email; pide el nombre del abogado que firma. Termina preguntando «¿Apruebas el plan…?» y no redacta nada.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "haz la secuencia de emails para los leads de una promoción de pisos de obra nueva, brief en ./ejemplos/promocion/brief.txt y la landing es ./ejemplos/promocion/landing.html",
+      "expected_output": "Clasifica la oferta como inmobiliaria (C), plan de 8 emails a 30 días con test de valor por email, identidad visual sacada de la landing, datos que faltan, y se detiene en la Parada 1 pidiendo el OK. No monta ningún email.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Necesito los emails de seguimiento post formulario de mi academia de idiomas. Solo tengo el brief: ./ejemplos/academia/brief.pdf",
+      "expected_output": "Responde pidiendo únicamente lo que falta (la landing con el formulario), sin volver a pedir el brief, y no empieza el plan hasta tenerla.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Con el plan ya aprobado del despacho de abogados, redacta y monta el email de valor E2 (tipo leccion) y enséñamelo.",
+      "expected_output": "Copy claro (asunto que dice el tema, dos primeras frases que explican qué es y para qué sirve, sin adivinanzas), una duda u objeción derribada con fuente, y la maqueta obligatoria del tipo: titular + carta + sección o recuadro de idea clave, con anclas de lectura. Para en la Parada 2 pidiendo el OK del copy antes de montar; con el OK, monta con build_email.py sin errores y con la jerarquía dentro de los parámetros de parametros.md §5 (titular al menos 2,25× el cuerpo).",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Monta el email de invitación de la secuencia del despacho de abogados, con su agenda online.",
+      "expected_output": "Email de tipo invitacion con titular, carta, pasos de qué pasa en la llamada y la banda `cierre` con el botón (único golpe de color del email). Sin antetítulos, sin cajas ni recuadros de color, sin flechas decorativas. qa_email.py da 0 errores y el esqueleto no repite el de otro email de la secuencia.",
+      "files": []
+    }
+  ]
+}

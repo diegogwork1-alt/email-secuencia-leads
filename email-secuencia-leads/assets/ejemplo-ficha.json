@@ -1,0 +1,47 @@
+{
+  "_nota": "Ejemplo ficticio del E0 (recepción). En una secuencia real cada dato sale del brief, de la landing o de las respuestas del formulario ([[variables]]). Saludo siempre «Hola[[nombre|]]:» (sin coma antes de la variable). En el asunto solo puede ir [[nombre|]].",
+  "email": "E0",
+  "tipo": "recepcion",
+  "dia": "D0 · al instante",
+  "asunto": "Tu solicitud de reforma: siguiente paso",
+  "asunto_alternativas": ["Recibido[[nombre|]]: te llamo en 24 horas", "Marta, del Estudio Ruiz, sobre tu reforma"],
+  "preheader": "Te llamo en menos de 24 horas laborables para ver tu proyecto.",
+  "modulos": [
+    {"tipo": "carta", "datos": {"SALUDO": "Hola[[nombre|]]:"}, "parrafos": [
+      {"PARRAFO": "Soy Marta, arquitecta técnica del Estudio Ruiz. Ya tengo tu solicitud y la reviso yo personalmente."},
+      {"PARRAFO": "Antes de hablar de precios necesito entender bien tu casa: por eso el primer paso es una llamada corta, sin compromiso."}
+    ]},
+    {"tipo": "pasos", "datos": {"TITULO": "Qué pasa ahora"}, "pasos": [
+      {"PASO_TITULO": "Te llamo en 24 h laborables", "PASO_TEXTO": "Desde un 91, para conocer la vivienda y lo que quieres cambiar."},
+      {"PASO_TITULO": "Visita técnica", "PASO_TEXTO": "Medimos y vemos instalaciones. Dura unos 45 minutos."},
+      {"PASO_TITULO": "Presupuesto por partidas", "PASO_TEXTO": "Cada partida con su precio, para que puedas comparar."}
+    ]},
+    {"tipo": "resumen", "datos": {"TITULO": "Lo que nos has contado"}, "filas": [
+      {"ETIQUETA": "Reforma", "VALOR": "[[tipo_reforma|Por concretar]]"},
+      {"ETIQUETA": "Cuándo", "VALOR": "[[plazo|Por concretar]]"}
+    ]},
+    {"tipo": "firma", "datos": {"PD": "Si prefieres adelantarlo, responde a este email con dos o tres fotos de la estancia."}}
+  ],
+  "_otros_bloques_ejemplo": [
+    {"tipo": "titular", "datos": {"H1": "Qué hace que una cocina cueste el doble", "LEAD": "Tres decisiones que se toman al principio y que pesan más que los muebles."}},
+    {"tipo": "imagen", "datos": {"IMG": "https://…/obra-real-1120.jpg", "ALT": "Cocina reformada por el estudio en Chamberí", "PIE": "Cocina en Chamberí, 2025. Foto del estudio."}},
+    {"tipo": "carta", "datos": {}, "parrafos": [{"PARRAFO": "Texto con **negrita** y un [enlace a la guía](https://www.example.com/guia)."}], "puntos": [{"PUNTO": "**Mover la toma de agua**: …"}]},
+    {"tipo": "seccion", "datos": {"TITULO": "Mover la toma de agua"}, "parrafos": [{"PARRAFO": "Texto de la sección, para partir los emails largos en partes con subtítulo."}]},
+    {"tipo": "tabla", "datos": {"TITULO": "Qué sube y qué baja el precio", "COL_0": "Decisión", "COL_A": "Más barato", "COL_B": "Más caro", "NOTA": "Rangos del estudio, 2025."}, "filas": [
+      {"ETIQUETA": "Fontanería", "A": "Dejar las tomas donde están", "B": "Mover la ducha de pared"},
+      {"ETIQUETA": "Alicatado", "A": "Formato grande, junta fina", "B": "Espiga o mosaico"}
+    ]},
+    {"tipo": "destacado", "datos": {"TITULO": "Pide el presupuesto por partidas"}, "parrafos": [{"PARRAFO": "…"}]},
+    {"tipo": "cita", "datos": {"CITA": "Texto literal del testimonio publicado.", "AUTOR": "Nombre tal como aparece", "DETALLE": "Reforma de baño en Getafe"}},
+    {"tipo": "caso", "datos": {"TITULO": "Un piso de 1970 en Carabanchel", "ANTES": "…", "DESPUES": "…"}},
+    {"tipo": "cifras", "datos": {"NOTA": "Datos del estudio, 2019-2025."}, "cifras": [{"VALOR": "240", "ETIQUETA": "reformas entregadas"}, {"VALOR": "9 sem.", "ETIQUETA": "plazo medio de cocina"}]},
+    {"tipo": "faq", "datos": {"TITULO": "Lo que más nos preguntan"}, "preguntas": [{"PREGUNTA": "¿…?", "RESPUESTA": "…"}]},
+    {"tipo": "boton", "datos": {"CTA_TEXTO": "Reservar mi visita técnica", "CTA_URL": "https://www.example.com/cita?email=[[email]]", "CTA_NOTA": "45 minutos, sin compromiso."}},
+    {"tipo": "cierre", "datos": {"TITULO": "Reserva tu visita técnica", "TEXTO": "45 minutos en tu casa, sin compromiso.", "CTA_TEXTO": "Elegir día y hora", "CTA_URL": "https://www.example.com/cita"}},
+    {"tipo": "enlace", "datos": {"ENLACE_TEXTO": "Ver cómo trabajamos", "ENLACE_URL": "https://www.example.com/proceso"}}
+  ],
+  "_variantes_ejemplo": {
+    "variantes": {"cocina": {"asunto": "…"}, "bano": {"asunto": "…"}},
+    "bloque_con_variante": {"tipo": "destacado", "solo": "cocina", "datos": {"TITULO": "…"}, "parrafos": [{"PARRAFO": "…"}]}
+  }
+}

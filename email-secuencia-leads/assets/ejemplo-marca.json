@@ -1,0 +1,65 @@
+{
+  "_nota": "Ejemplo ficticio. En una secuencia real cada dato sale de landing/landing.md o del brief; lead_muestra solo se usa en las vistas previas.",
+  "cliente": "Estudio Ruiz Reformas",
+  "web": "https://www.example.com",
+  "dominios_utm": ["example.com"],
+  "utm_campaign": "ruiz-reformas-secuencia",
+  "tratamiento": "tu",
+  "logo": {
+    "url_claro": "https://www.example.com/img/logo-email.png",
+    "url_oscuro": "",
+    "ancho": 150,
+    "alto": 38,
+    "alt": "Estudio Ruiz Reformas"
+  },
+  "logo_texto": "ESTUDIO RUIZ",
+  "_nota_colores": "Los colores y las fuentes salen SIEMPRE de la landing del cliente. Nunca se inventa una paleta crema + terracota ni se pone una serif de catálogo porque suene premium (diseno.md §1).",
+  "colores": {
+    "acento": "#1F5D50",
+    "tinta": "#16181C",
+    "cuerpo": "#3A3F47",
+    "suave": "#6B7280",
+    "papel": "#FFFFFE",
+    "linea": "#E4E6EA"
+  },
+  "tipografia": {
+    "estilo": "moderno",
+    "titulares_mayusculas": false,
+    "cita_cursiva": true,
+    "titulares": "'Helvetica Neue',Helvetica,Arial,sans-serif",
+    "texto": "'Helvetica Neue',Helvetica,Arial,sans-serif",
+    "google_fonts": "",
+    "peso_titular": 600,
+    "titulares_mso": "Arial,sans-serif"
+  },
+  "remitente": {
+    "nombre": "Marta Ruiz",
+    "cargo": "Arquitecta técnica en Estudio Ruiz",
+    "email": "marta@example.com",
+    "foto": "",
+    "despedida": "Un abrazo,"
+  },
+  "legal": {
+    "razon_social": "Estudio Ruiz Reformas S.L.",
+    "nif": "B00000000",
+    "direccion": "Calle Ejemplo 12, 28001 Madrid",
+    "privacidad_url": "https://www.example.com/politica-de-privacidad",
+    "url_baja": ""
+  },
+  "motivo": "Recibes este email porque pediste presupuesto para una reforma en example.com.",
+  "n8n_prefijo": "$json",
+  "campos_formulario": {
+    "nombre": "Nombre",
+    "email": "Correo",
+    "telefono": "Teléfono",
+    "tipo_reforma": "¿Qué quieres reformar?",
+    "plazo": "¿Cuándo te gustaría empezar?"
+  },
+  "lead_muestra": {
+    "nombre": "Laura",
+    "email": "laura@example.com",
+    "tipo_reforma": "Cocina",
+    "plazo": "En los próximos 3 meses"
+  },
+  "claims_prohibidos": ["el mejor precio", "garantizado al 100 %"]
+}
